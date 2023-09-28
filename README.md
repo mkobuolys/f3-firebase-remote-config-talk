@@ -4,9 +4,11 @@
 
 A presentation from [Flutter Firebase Festival](https://f3.events/) 💙💛
 
+Co-author: [Darja Orlova](https://github.com/darjaorlova) 🐱
+
 Powered by [flutter_deck](https://pub.dev/packages/flutter_deck) 🚀
 
-Deployed on TBD 🎉
+Deployed on [kazlauskas.dev](https://kazlauskas.dev/f3-firebase-remote-config) 🎉
 
 ---
 
