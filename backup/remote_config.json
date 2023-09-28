@@ -1,0 +1,108 @@
+{
+  "conditions": [
+    {
+      "name": "Onboarding Cat Index 1 20%",
+      "expression": "percent('8gy8q0dphgr') between 0 and 20",
+      "tagColor": "ORANGE"
+    },
+    {
+      "name": "Onboarding Cat Index 2 20%",
+      "expression": "percent('pxe8qhl20gio') between 0 and 20",
+      "tagColor": "DEEP_ORANGE"
+    },
+    {
+      "name": "Onboarding Cat Index 3 20%",
+      "expression": "percent('ksv89ddwazql') between 0 and 20",
+      "tagColor": "PURPLE"
+    },
+    {
+      "name": "20% of users",
+      "expression": "percent('r8n483asleoe') between 0 and 20",
+      "tagColor": "CYAN"
+    },
+    {
+      "name": "Exclusive promo for new iOS users in Latvia",
+      "expression": "device.os == 'ios' && device.country in ['LV']",
+      "tagColor": "DEEP_ORANGE"
+    },
+    {
+      "name": "Onboarding Cat Index 4 20%",
+      "expression": "percent('hikkwcs4qci2') between 0 and 20",
+      "tagColor": "GREEN"
+    },
+    {
+      "name": "Onboarding Cat Index 5 20%",
+      "expression": "percent('qehwewbmvwwc') between 0 and 20",
+      "tagColor": "BLUE"
+    },
+    {
+      "name": "Paywall Simple 50%",
+      "expression": "percent('on9qv75wgk5p') between 0 and 50",
+      "tagColor": "TEAL"
+    },
+    {
+      "name": "Paywall Detailed 50%",
+      "expression": "percent('6e7rjfx65e45') between 50 and 100",
+      "tagColor": "PURPLE"
+    }
+  ],
+  "parameters": {
+    "onboarding_cat_index": {
+      "defaultValue": {
+        "value": "5"
+      },
+      "conditionalValues": {
+        "Onboarding Cat Index 1 20%": {
+          "value": "1"
+        },
+        "Onboarding Cat Index 2 20%": {
+          "value": "2"
+        },
+        "Onboarding Cat Index 3 20%": {
+          "value": "3"
+        },
+        "Onboarding Cat Index 4 20%": {
+          "value": "4"
+        },
+        "Onboarding Cat Index 5 20%": {
+          "value": "5"
+        }
+      },
+      "description": "Possible values are in the range 1..5",
+      "valueType": "NUMBER"
+    }
+  },
+  "parameterGroups": {
+    "Premium": {
+      "parameters": {
+        "paywall_type": {
+          "defaultValue": {
+            "value": "simple"
+          },
+          "conditionalValues": {
+            "Paywall Simple 50%": {
+              "value": "simple"
+            },
+            "Paywall Detailed 50%": {
+              "value": "detailed"
+            }
+          },
+          "description": "Possible values: \"simple\", \"detailed\"",
+          "valueType": "STRING"
+        },
+        "video_call_enabled": {
+          "defaultValue": {
+            "value": "false"
+          },
+          "conditionalValues": {
+            "20% of users": {
+              "value": "true"
+            }
+          },
+          "description": "Feature flag for the video call feature.",
+          "valueType": "BOOLEAN"
+        }
+      }
+    }
+  }
+}

@@ -60,7 +60,7 @@ Create a new Firebase project and import the Firebase Remote Config configuratio
 Then, connect the Firebase project to the Flutter app by running the following command (replace `<project_id>` with your Firebase project ID):
 
 ```
-flutterfire configure -p <project_id> -o app/lib/firebase/firebase_options.dart
+cd app && flutterfire configure -p <project_id> -o lib/firebase/firebase_options.dart
 ```
 
 Finally, run the following commands to build and install the app:
