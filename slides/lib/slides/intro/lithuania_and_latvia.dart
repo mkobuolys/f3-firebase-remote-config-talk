@@ -10,6 +10,7 @@ class LithuaniaAndLatviaSlide extends FlutterDeckSlideWidget {
           configuration: const FlutterDeckSlideConfiguration(
             route: '/lithuania-and-latvia',
             steps: 6,
+            hidden: true,
           ),
         );
 

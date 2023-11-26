@@ -60,8 +60,8 @@ class _Background extends StatelessWidget {
         child: Align(
           alignment: Alignment.bottomRight,
           child: Image.asset(
-            'assets/f3_logo.png',
-            width: constraints.maxWidth / 10,
+            'assets/devfest_2023.png',
+            width: constraints.maxWidth / 12,
           ),
         ),
       ),

@@ -12,7 +12,7 @@ dependencies:
   device_frame: ^1.1.0
   flutter:
     sdk: flutter
-  flutter_deck: ^0.5.0
+  flutter_deck: ^0.8.0
   google_maps_flutter: ^2.5.0
   purrfect_match:
     path: ../app
