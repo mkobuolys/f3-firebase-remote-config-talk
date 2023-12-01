@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
         ...abTestingSlides,
         SummarySlide(),
         ThankYouSlide(),
+        FeedbackSlide(),
       ],
     );
   }
