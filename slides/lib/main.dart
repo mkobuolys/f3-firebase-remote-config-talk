@@ -1,10 +1,17 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_deck/flutter_deck.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:slides/widgets/purrfect_theme.dart';
 
 import 'slides/slides.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  unawaited([Permission.camera, Permission.microphone].request());
+
   runApp(const MyApp());
 }
 
