@@ -6,6 +6,7 @@ import 'avoiding_bugs.dart';
 import 'crashlytics_alerts.dart';
 import 'crashlytics_dashboard.dart';
 import 'crashlytics_setup.dart';
+import 'firebase_rollout_preview.dart';
 import 'global_feature_flag.dart';
 import 'global_release.dart';
 import 'percentage_rollout.dart';
@@ -36,6 +37,7 @@ const featureTogglingSlides = <FlutterDeckSlideWidget>[
   PercentageRolloutSlide(),
   StagedRolloutConditionSlide(),
   VideoCallEnabledConditionalSlide(),
+  FirebaseRolloutPreviewSlide(),
   VideoCallCodeSlide(),
   VideoCallDemoSlide(),
 ];
