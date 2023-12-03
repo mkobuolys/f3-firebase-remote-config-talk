@@ -6,6 +6,7 @@ class ConditionsStepSeven extends FlutterDeckSlideWidget {
       : super(
           configuration: const FlutterDeckSlideConfiguration(
             route: '/conditions-step-seven',
+            hidden: true,
           ),
         );
 
